@@ -16,7 +16,7 @@ instance Functor F where             -- Compare GHC "deriving Functor"
 cata :: Functor f => (f a -> a) -> (Fix f -> a)
 cata g (Fix t) = g (fmap (cata g) t)
 
--- DUTA states
+-- deterministic bottom-up tree acceptor (DUTA) states
 data Q = Q0 | Q1 deriving Show
 
 -- F-algebra :: F a -> a

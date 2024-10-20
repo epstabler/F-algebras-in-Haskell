@@ -16,12 +16,12 @@ cata :: Functor f => (f a -> a) -> (Fix f -> a)
 cata g (In t) = g (fmap (cata g) t)
 -- In Data.Fix, cata is foldFix.
 
--- Now the algebra F-algebra :: F a -> a maps elements to values
+-- Now the F-algebra :: F a -> a maps elements to values
 alg :: F Int -> Int
 alg (Lit i) = i
 alg (Add i j) = i + j
 
--- to get the value of any term in Fix F, we extend alg with cata
+-- To define values for all terms in Fix F, we extend alg with cata
 val :: Fix F -> Int
 val = cata alg
 

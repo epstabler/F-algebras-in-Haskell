@@ -5,12 +5,12 @@ import Data.Fix  -- Use e.g.: ghci -package data-fix
 -- Now we specify a particular functor F, a homomorphism over type a
 data F a = Lit Int | Add a a deriving (Show,Functor)
 
--- Now the algebra F-algebra :: F a -> a maps elements to values
+-- Now the F-algebra :: F a -> a maps elements to values
 alg :: F Int -> Int
 alg (Lit i) = i
 alg (Add i j) = i + j
 
--- to get the value of any term in Fix F, extend alg with catamorphism
+-- To define values for all terms in Fix F, extend alg with catamorphism
 val :: Fix F -> Int
 val = foldFix alg
 
