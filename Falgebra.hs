@@ -1,6 +1,4 @@
 {- Minimal F-algebra using Fix as a type derived from type f.
-   This is the same as Falgebra0.hs, but without using
-   Fix and foldFix from the Data.Fix library or 'deriving Functor'.
 -}
 
 newtype Fix f = In (f (Fix f))  -- Also available in the GHC Data.Fix library.
