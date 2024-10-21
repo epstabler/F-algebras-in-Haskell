@@ -40,10 +40,4 @@ ghci> example1
 
 ghci> example1a
 5
-
-Cf similar examples here:
-https://www.schoolofhaskell.com/user/bartosz/understanding-algebras 
-https://www.reddit.com/r/haskell/comments/bkolte/trouble_understanding_falgebra_and_catamorphisms/
-https://haskell-cafe.haskell.narkive.com/RmAQNjjv/the-relationship-between-f-algebras-and-the-free-monad
-https://www.hobson.space/posts/algebras/
 -}
