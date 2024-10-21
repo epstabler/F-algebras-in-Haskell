@@ -9,6 +9,6 @@ Gibbons
 Milewski
 [2017](https://bartoszmilewski.com/2017/02/28/f-algebras/).
 
-Here, a minimal example of
+In Falgebra1.hs, a minimal example of
 the Haskell `modular tree automata' of Bahr
 [2012](https://bahr.io/pubs/files/bahr12mpc-paper.pdf).
