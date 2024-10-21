@@ -7,7 +7,7 @@ Gibbons
 [2014](https://www.cs.ox.ac.uk/jeremy.gibbons/publications/cwh-slides.pdf),
 [2003](https://www.cs.ox.ac.uk/jeremy.gibbons/publications/origami.pdf);
 Milewski
-[2017](https://bartoszmilewski.com/2017/02/28/f-algebras/).
+[2017](https://bartoszmilewski.com/2013/06/10/understanding-f-algebras/}
 
 In Falgebra1.hs, a minimal example of
 the Haskell `modular tree automata' of Bahr
