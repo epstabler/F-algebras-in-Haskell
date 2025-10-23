@@ -3,7 +3,8 @@
 
 newtype Fix f = In (f (Fix f))  -- Also available in the GHC Data.Fix library.
 -- But in Data.Fix, In is also called Fix -- overloading that type symbol.
--- Intuitively, the constructor In holds the fixed point.
+-- Intuitively, the Fix constructor In acts like
+--  a function that takes an element of type f (Fix f) to yield Fix f
 
 -- Now we specify a particular functor F, a homomorphism over type a
 data F a = Lit Int | Add a a deriving Show
